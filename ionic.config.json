@@ -1,0 +1,7 @@
+{
+  "name": "look-ahead",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
