@@ -25,6 +25,8 @@ export class HomePage {
   getItems() {
     this.allItems = this.api.items;
     this.items = [...this.allItems];
+
+
+    
   }
-  
 }
