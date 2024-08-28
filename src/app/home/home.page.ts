@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ApiService } from '../services/api/api.service';
 import { Router } from '@angular/router';
-import { RouterLink } from '@angular/router';
+
 
 
 
@@ -17,11 +17,8 @@ export class HomePage {
   items: any [] = [];
   allItems: any [] = [];
   private api = inject(ApiService);
-  constructor(private router: Router) {}
 
-  navigatedetalleItem(id: number) {
-    this.router.navigate(['/Productos', id]);
-  }
+  constructor(private router: Router) {}
 
   ngOnInit () {
     console.log('ngoninit homepage');
@@ -32,6 +29,11 @@ export class HomePage {
   getItems() {
     this.allItems = this.api.items;
     this.items = [...this.allItems];
+  }
+
+  navigatedeTotalleItem(id: number) {
+    console.log(`Navigating to detalleItem/${id}`);
+    this.router.navigate([`/detalleItem/${id}`]);
   }
 
 }

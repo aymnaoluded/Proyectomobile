@@ -79,16 +79,7 @@ export class ApiService {
       cover: 'assets/image/carni special.webp',
       description: 'Especial edition',
     },
-    {
-      id: '8',
-      name: 'Tshirt',
-      price: 110,
-      status: true,
-      rating: 6.2,
-      cover: 'assets/image/carni special.webp',
-      description: 'Especial edition',
-    },
-
+    
   ];
   
 

@@ -19,8 +19,8 @@
 
   <ion-row>
     @for(item of items; track i; let i = $index) {
-    <ion-col *ngFor="let item of items; let i = index" sizeLg="8" sizeMd="4" sizeSm="6" sizeXl="3" sizeXs="6">
-      <ion-card [routerLink]="['/Home/Productos', item?.id]">
+    <ion-col sizeLg="8" sizeMd="4" sizeSm="6" sizeXl="3" sizeXs="6">
+      <ion-card (click)="navigatedeTotalleItem(item.id)">
         <ion-thumbnail>
           <ion-img [src]='item?.cover'></ion-img>
         </ion-thumbnail>
