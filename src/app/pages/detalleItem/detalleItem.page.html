@@ -1,11 +1,20 @@
 <ion-content [fullscreen]="true">
-    <ion-header slot="fixed" class="ion-no-boder">
-        <ion-title>Detalles</ion-title>
-        <ion-toolbar>
-            <ion-buttons slot="start" mode="md">
-                <ion-back-button defaultHref="/home" color="green"></ion-back-button>
-            </ion-buttons>
-        </ion-toolbar>
+    <ion-header slot="fixed" class="ion-no-border">
+      <ion-toolbar>
+        <ion-buttons slot="start" mode="md">
+          <ion-back-button defaultHref="/home" color="white"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
     </ion-header>
 
-</ion-content>
+    <div [style.backgroundImage]="'url(' + item?.cover + ')'" class="bg"></div>
+    <ion-label>
+        {{item?.name | uppercase}}
+        <p class="desc">{{item?.description}}</p>
+        <p>
+            <ion-text color="medium"></ion-text>
+            <ion-text color="dark" class="price">
+                $<span>{{item?.price}}</span>
+            </ion-text>
+        </p>
+    </ion-label>
