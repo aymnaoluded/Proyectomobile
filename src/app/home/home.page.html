@@ -18,8 +18,8 @@
 <ion-content>
 
   <ion-row>
-    @for(item of items; track i; let i = $index) {
-    <ion-col sizeLg="8" sizeMd="4" sizeSm="6" sizeXl="3" sizeXs="6">
+    
+    <ion-col sizeLg="8" sizeMd="4" sizeSm="6" sizeXl="3" sizeXs="6"*ngFor="let item of items"> 
       <ion-card (click)="navigatedeTotalleItem(item.id)">
         <ion-thumbnail>
           <ion-img [src]='item?.cover'></ion-img>
@@ -35,9 +35,8 @@
         </ion-label>
       </ion-card>
     </ion-col>
-    }
+    
 
   </ion-row>
-
 
 </ion-content>

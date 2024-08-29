@@ -34,7 +34,8 @@ getItem(item: any){
     return;
   }
 
-  this.item = this.api.items.find(record => record.id == id);
+  this.item = this.api.items.find(record => record.id ==
+     id);
   console.log('Item:', this.item);
 }
   

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Datos del usuario</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-header class="ion-text-center">
+        <h1>Registrarse</h1>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Nombre de usuario" labelPlacement="floating" placeholder="Ingrese su nombre de usuario" [(ngModel)]="nombreUsuario" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Correo electronico" labelPlacement="floating" type="email" placeholder="Ingrese su Correo" [(ngModel)]="email"> </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña" [(ngModel)]="password" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Confirmar Contraseña" labelPlacement="floating" type="password" placeholder="Confirme su contraseña" [(ngModel)]="confirmarPassword" ></ion-input>
+      </ion-item>
+      <br>
+      <div class="botones">
+        <ion-button  (click)="registro()">Confirmar</ion-button>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
