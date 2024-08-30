@@ -46,9 +46,5 @@ navigateToCarrito(){
   this.router.navigate(['/carrito']);
 }
 
-addToCart(item: any) {
-  this.router.navigate(['/carrito'], { queryParams: { productID: item.id}});
-}
-
 
 }
