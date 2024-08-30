@@ -3,8 +3,6 @@ import { ApiService } from '../services/api/api.service';
 import { Router } from '@angular/router';
 
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -34,6 +32,11 @@ export class HomePage {
   navigatedeTotalleItem(id: number) {
     console.log(`Navigating to detalleItem/${id}`);
     this.router.navigate([`/detalleItem/${id}`]);
+    
+  }
+
+  navigateToCarrito(){
+    this.router.navigate(['/home/carrito']);
   }
 
 }

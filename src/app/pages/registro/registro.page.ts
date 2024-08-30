@@ -15,7 +15,6 @@ export class RegistroPage implements OnInit {
   confirmarPassword: string = '';
 
 
-
   constructor( private router : Router , private alertController: AlertController , private toastController : ToastController) { }
 
   ngOnInit() {

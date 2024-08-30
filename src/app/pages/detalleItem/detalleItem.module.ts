@@ -5,7 +5,6 @@ import { IonicModule } from '@ionic/angular';
 import { DetalleItemPage } from './detalleItem.page';
 import { Route, RouterModule, Routes } from '@angular/router';
 
-
 const routes: Routes = [
   {
     path: '',

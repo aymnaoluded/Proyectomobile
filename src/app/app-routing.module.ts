@@ -7,11 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
     path: 'detalleItem/:id',
     loadChildren: () => import('./pages/detalleItem/detalleItem.module').then(m => m.DetalleItemPageModule)
   },
@@ -23,7 +18,15 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
-  
+  {
+    path: 'carrito',
+    loadChildren: () => import('./pages/carrito/carrito.module').then( m => m.CarritoPageModule)
+  },
+   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
 
 ];
 

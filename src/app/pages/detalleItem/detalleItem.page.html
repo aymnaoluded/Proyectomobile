@@ -9,7 +9,7 @@
           <ion-button 
           fill="clear"
           size="large"
-          color="light">
+          color="light" (click)="navigateToCarrito()"> <!--bag para verificar el carrito-->
           <ion-icon name="bag-handle" slot="icon-only"></ion-icon>
 
           </ion-button>
@@ -17,16 +17,16 @@
       </ion-toolbar>
     </ion-header>
 
-    <div [style.backgroundImage]="'url(' + item?.cover + ')'" class="bg"></div>
+    <div [style.backgroundImage]="'url(' + item.cover + ')'" class="bg"></div>
     <ion-label>
-        {{item?.name | uppercase}}
-        <p class="desc">{{item?.description}}</p>
+        {{item.name | uppercase}}
+        <p class="desc">{{item.description}}</p>
         <p>
             <ion-text color="medium"></ion-text>
             <ion-text color="white" class="price">
-                $<span>{{item?.price}}</span>
+                $<span>{{item.price}}</span>
             </ion-text>
-        </p>
+          </p>
     </ion-label>
 </ion-content>
 
@@ -36,7 +36,7 @@
     <ion-button
     size="large"
       expand="block"
-      [strong]="true">
+      [strong]="true" (click)="navigateToCarrito()">
       <ion-icon slot="start" name="bag-handle-outline"></ion-icon>
     <ion-text>Agregar al carro</ion-text>
     </ion-button>

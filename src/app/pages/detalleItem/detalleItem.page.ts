@@ -1,7 +1,9 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, Inject, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { ApiService } from 'src/app/services/api/api.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-detalle-item',
@@ -16,7 +18,8 @@ export class DetalleItemPage implements OnInit {
   private route = inject(ActivatedRoute);
   private navCtrl = inject(NavController);
   private api = inject(ApiService);
-
+  private router = inject(Router);
+  
 ngOnInit() {
   this.itemId = this.route.snapshot.paramMap.get('id') || '';
   console.log('Item ID:', this.itemId);
@@ -39,4 +42,13 @@ getItem(item: any){
   console.log('Item:', this.item);
 }
   
+navigateToCarrito(){
+  this.router.navigate(['/carrito']);
+}
+
+addToCart(item: any) {
+  this.router.navigate(['/carrito'], { queryParams: { productID: item.id}});
+}
+
+
 }
