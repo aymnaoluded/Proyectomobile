@@ -1,7 +1,6 @@
 import { Component, Inject, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NavController } from '@ionic/angular';
-import { ApiService } from 'src/app/services/api/api.service';
 import { Router } from '@angular/router';
 
 
@@ -17,17 +16,23 @@ export class DetalleItemPage implements OnInit {
 
   private route = inject(ActivatedRoute);
   private navCtrl = inject(NavController);
-  private api = inject(ApiService);
   private router = inject(Router);
+
+
+  constructor() {
+    const navigation = this.router.getCurrentNavigation();
+    if (navigation?.extras?.state) {
+      this.item = navigation.extras.state['item'];
+    }
+  }
   
 ngOnInit() {
-  this.itemId = this.route.snapshot.paramMap.get('id') || '';
-  console.log('Item ID:', this.itemId);
-
-  if (this.itemId) {
-    this.getItem(this.itemId);
+  if (!this.item) {
+    console.error('Item no encontrado');
+    this.router.navigate(['/home']); 
   }
 }
+
 
 getItem(item: any){
   const id = this.route.snapshot.paramMap.get('id');
@@ -37,7 +42,7 @@ getItem(item: any){
     return;
   }
 
-  this.item = this.api.items.find(record => record.id ==
+  this.item = this.item.find((record: { id: string; }) => record.id ==
      id);
   console.log('Item:', this.item);
 }
