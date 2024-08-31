@@ -18,7 +18,6 @@ export class HomePage {
       name: 'Hoodie',
       price: 40,
       status: true,
-      rating: 6.2,
       cover: 'assets/image/hoodie-blue.webp',
       description: 'Hoodie corteiz Uk',
     },
@@ -27,7 +26,7 @@ export class HomePage {
       name: 'falda',
       price: 30,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/falda-denin.webp',
       description: 'falda denin corteiz UK',
     },
@@ -36,7 +35,7 @@ export class HomePage {
       name: 'short',
       price: 40,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/short-denin.webp',
       description: 'short alcatraz',
     },
@@ -45,7 +44,7 @@ export class HomePage {
       name: 'tan top',
       price: 20,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/tan-top-blanca.webp',
       description: 'tan top algodon',
     },
@@ -54,7 +53,7 @@ export class HomePage {
       name: 'Skepta tshirt',
       price: 80,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/skepta tshirt.webp',
       description: 'Skepta Edition',
     },
@@ -63,7 +62,7 @@ export class HomePage {
       name: 'short rosa',
       price: 17,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/short rosa.webp',
       description: 'Short rosa',
     },
@@ -72,7 +71,7 @@ export class HomePage {
       name: 'club america',
       price: 90,
       status: true,
-      rating: 6.2,
+  
       cover: 'assets/image/club america.webp',
       description: 'Especial edition',
     },
@@ -90,7 +89,7 @@ export class HomePage {
       //name: 'Air max 95 Corteiz',
       //price: 150,
       //status: true,
-      //rating: 6.2,
+      
       //cover: 'assets/image/Shoes corteiz.webp',
       //description: 'Especial edition',
     //},
@@ -99,7 +98,7 @@ export class HomePage {
       //name: 'Air max 95 Corteiz Green',
       //price: 80,
       //status: true,
-      //rating: 6.2,
+      
       //cover: 'assets/image/Shoes corteiz Green.webp',
       //description: 'Especial edition',
     //},
@@ -134,7 +133,7 @@ export class HomePage {
   }
 
   navigateToCarrito(){
-    this.router.navigate(['/home/carrito']);
+    this.router.navigate(['/home/login']);
   }
 
   

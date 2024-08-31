@@ -28,7 +28,7 @@
               <ion-label position="stacked">Correo Electrónico</ion-label>
               <ion-input [(ngModel)]="usuario.correo" readonly></ion-input>
             </ion-item>
-            <ion-button (click)="editarCuenta()">{{ editar ? 'Guardar' : 'Editar' }}</ion-button>
+            <ion-button (click)="editarCuenta()" color="tertiary">{{ editar ? 'Guardar' : 'Editar' }}</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
