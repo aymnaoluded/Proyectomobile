@@ -1,4 +1,4 @@
-<ion-header >
+<ion-header>
   <ion-toolbar>
     <ion-title>Login</ion-title>
 
@@ -17,23 +17,25 @@
   <ion-card>
     <ion-card-header>
 
-      <h1 class="ion-text-center" >Iniciar Sesion</h1>
+      <h1 class="ion-text-center">Iniciar Sesion</h1>
 
     </ion-card-header>
 
     <ion-card-content>
       <ion-item>
-        <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingrese su nombre" [(ngModel)]="loginUser"></ion-input>
+        <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingrese su nombre"
+          [(ngModel)]="loginUser"></ion-input>
       </ion-item>
       <br>
       <ion-item>
-        <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña" [(ngModel)]="passwordUser" ></ion-input>
+        <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"
+          [(ngModel)]="passwordUser"></ion-input>
       </ion-item>
       <br>
       <div class="boton">
-        <ion-button expand="block" color="primary" (click)="iniciar()" >Iniciar sesion</ion-button>
+        <ion-button expand="block" color="primary" (click)="iniciar()">Iniciar sesion</ion-button>
         <br>
-        <ion-button  expand="block" color="primary" [routerLink]="['/registro']" >Registrarse</ion-button>
+        <ion-button expand="block" color="primary" [routerLink]="['/registro']">Registrarse</ion-button>
 
         <a href="" class="ion-text-center" [routerLink]="['/password-olvidada']">¿Has olvidado tu contraseña?</a>
         <a href="" class="ion-text-center" [routerLink]="['/admin']">Ingresar como administrador</a>

@@ -25,31 +25,31 @@ export class DetalleItemPage implements OnInit {
       this.item = navigation.extras.state['item'];
     }
   }
-  
-ngOnInit() {
-  if (!this.item) {
-    console.error('Item no encontrado');
-    this.router.navigate(['/home']); 
-  }
-}
 
-
-getItem(item: any){
-  const id = this.route.snapshot.paramMap.get('id');
-  console.log('check id: ', id);
-  if (!id || id === '0') {
-    this.navCtrl.back();
-    return;
+  ngOnInit() {
+    if (!this.item) {
+      console.error('Item no encontrado');
+      this.router.navigate(['/home']);
+    }
   }
 
-  this.item = this.item.find((record: { id: string; }) => record.id ==
-     id);
-  console.log('Item:', this.item);
-}
-  
-navigateToCarrito(){
-  this.router.navigate(['/carrito']);
-}
+
+  getItem(item: any) {
+    const id = this.route.snapshot.paramMap.get('id');
+    console.log('check id: ', id);
+    if (!id || id === '0') {
+      this.navCtrl.back();
+      return;
+    }
+
+    this.item = this.item.find((record: { id: string; }) => record.id ==
+      id);
+    console.log('Item:', this.item);
+  }
+
+  navigateToCarrito() {
+    this.router.navigate(['/carrito']);
+  }
 
 
 }

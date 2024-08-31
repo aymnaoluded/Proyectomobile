@@ -85,25 +85,25 @@ export class HomePage {
       cover: 'assets/image/carni special.webp',
       description: 'Especial edition',
     },
-    {
-      id: '9',
-      name: 'Air max 95 Corteiz',
-      price: 150,
-      status: true,
-      rating: 6.2,
-      cover: 'assets/image/Shoes corteiz.webp',
-      description: 'Especial edition',
-    },
-    {
-      id: '10',
-      name: 'Air max 95 Corteiz Green',
-      price: 80,
-      status: true,
-      rating: 6.2,
-      cover: 'assets/image/Shoes corteiz Green.webp',
-      description: 'Especial edition',
-    },
-
+    //{
+      //id: '9',
+      //name: 'Air max 95 Corteiz',
+      //price: 150,
+      //status: true,
+      //rating: 6.2,
+      //cover: 'assets/image/Shoes corteiz.webp',
+      //description: 'Especial edition',
+    //},
+    //{
+      //d: '10',
+      //name: 'Air max 95 Corteiz Green',
+      //price: 80,
+      //status: true,
+      //rating: 6.2,
+      //cover: 'assets/image/Shoes corteiz Green.webp',
+      //description: 'Especial edition',
+    //},
+    
     
   ];
 

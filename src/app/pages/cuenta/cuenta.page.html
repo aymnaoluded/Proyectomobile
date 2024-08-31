@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Cuenta</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="white"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+
+      <ion-card-title>Información del Usuario</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+
+            <ion-item>
+              <ion-label position="stacked">Nombre del Usuario</ion-label>
+              <ion-input [(ngModel)]="usuario.nombre" [readonly]="!editar"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Correo Electrónico</ion-label>
+              <ion-input [(ngModel)]="usuario.correo" readonly></ion-input>
+            </ion-item>
+            <ion-button (click)="editarCuenta()">{{ editar ? 'Guardar' : 'Editar' }}</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

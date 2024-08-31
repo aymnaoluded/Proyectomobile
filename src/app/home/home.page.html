@@ -6,10 +6,13 @@
     <ion-title>
       OcultoStudio
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button fill="clear">
-        <ion-icon name="bag-handle" slot="icon-only"></ion-icon>
-      </ion-button>
+    <ion-buttons slot="end" [routerLink]="'/carrito'">
+      <ion-button
+      fill="clear"
+      size="large"
+      color="light" > <!--bag para verificar el carrito-->
+      <ion-icon name="bag-handle" slot="icon-only"></ion-icon>
+    </ion-button>
     </ion-buttons>
   </ion-toolbar>
   
