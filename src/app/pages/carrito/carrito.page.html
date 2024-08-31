@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title class="ion-text-center">Carrito de Compras</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -40,6 +42,7 @@
               <div class="total">
                 <h4>Total del Carrito: {{ calcularTotalCarrito() | currency }}</h4>
               </div>
+              <ion-button expand="full" color="success" (click)="pagar()">Pagar</ion-button>
             </ion-footer>
           </ion-col>
         </ion-row>

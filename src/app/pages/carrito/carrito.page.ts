@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -15,8 +16,8 @@ item = {
   cantidad:1,
   cover: 'assets/image/hoodie-blue.webp',
   Size: 'M'
+};
 
-}
 
 calcularTotalCarrito() {
   return this.item.total;
@@ -110,9 +111,18 @@ calcularTotalCarrito() {
 
 
 
-  constructor() { }
+  constructor(private alertController: AlertController) {}
 
   ngOnInit() {
   }
 
+  async pagar() {
+    const alert = await this.alertController.create({
+      header: 'Compra Realizada Exitosamente',
+      message: '!Gracias por tu Compra!',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
 }
