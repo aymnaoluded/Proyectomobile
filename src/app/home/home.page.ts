@@ -86,22 +86,28 @@ export class HomePage {
     },
     //{
       //id: '9',
-      //name: 'Air max 95 Corteiz',
+      ///name: 'Chandal Corteiz',
       //price: 150,
       //status: true,
-      
-      //cover: 'assets/image/Shoes corteiz.webp',
+      //cover: 'assets/image/Balenciago.webp',
       //description: 'Especial edition',
     //},
-    //{
-      //d: '10',
-      //name: 'Air max 95 Corteiz Green',
-      //price: 80,
-      //status: true,
-      
-      //cover: 'assets/image/Shoes corteiz Green.webp',
-      //description: 'Especial edition',
-    //},
+    {
+      id: '9',
+      name: 'Hoodie Mirror Balenciaga',
+      price: 80,
+      status: true,
+      cover: 'assets/image/Mirror.webp',
+      description: 'Especial edition',
+    },
+    {
+      id: '10',
+      name: 'Crop balenciaga',
+      price: 80,
+      status: true,
+      cover: 'assets/image/Balenciagazip.webp',
+      description: 'Especial edition',
+    },
     
     
   ];

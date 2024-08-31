@@ -40,6 +40,11 @@ const routes: Routes = [
     path: 'catalogo',
     loadChildren: () => import('./pages/catalogo/catalogo.module').then( m => m.CatalogoPageModule)
   },
+  {
+    path: 'envio',
+    loadChildren: () => import('./pages/envio/envio.module').then( m => m.EnvioPageModule)
+  },
+  
   
 
 ];

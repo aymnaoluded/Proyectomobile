@@ -17,13 +17,22 @@ export class CatalogoPage implements OnInit {
         cover:'assets/image/hoodie-blue.webp',
         description: 'Hoodie corteiz Uk'
       },
+      {
+        id: '10',
+        name: 'Hoodie Mirror Balenciaga',
+        price: 80,
+        status: true,
+        cover: 'assets/image/Mirror.webp',
+        description: 'Especial edition',
+      },
       //{
-        //id: '',
-        //name: 'Hoodie',
-        //
-        //cover:'assets/image/',
-        //description: ''
-      //}
+        //id: '11',
+        //name: 'Crop balenciaga',
+        //price: 80,
+        //status: true,
+        //cover: 'assets/image/Balenciagazip.webp',
+        //description: 'Especial edition',
+      //},
     ],
 
     poleras: [
