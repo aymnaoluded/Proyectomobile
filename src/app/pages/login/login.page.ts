@@ -11,9 +11,9 @@ export class LoginPage implements OnInit {
 
   usuario: any ={
 
-    nombreUsuario: '',
+    nombreUsuario: '.',
     email: '',
-    password: '',
+    password: '.',
     confirmarPassword: ''
 
   }
