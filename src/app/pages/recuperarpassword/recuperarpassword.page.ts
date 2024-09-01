@@ -17,7 +17,7 @@ export class RecuperarpasswordPage implements OnInit {
   enviar(){
 
     this.envairToast('bottom')
-    this.router.navigate(['/login'])
+    this.router.navigate(['/cambiarpassword'])
 
 
   }

@@ -43,7 +43,8 @@ const routes: Routes = [
   {
     path: 'envio',
     loadChildren: () => import('./pages/envio/envio.module').then( m => m.EnvioPageModule)
-  },  {
+  },
+  {
     path: 'adminlogin',
     loadChildren: () => import('./pages/adminlogin/adminlogin.module').then( m => m.AdminloginPageModule)
   },
@@ -83,6 +84,15 @@ const routes: Routes = [
     path: 'recuperarpassword',
     loadChildren: () => import('./pages/recuperarpassword/recuperarpassword.module').then( m => m.RecuperarpasswordPageModule)
   },
+  {
+    path: 'cambiarpassword',
+    loadChildren: () => import('./pages/cambiarpassword/cambiarpassword.module').then( m => m.CambiarpasswordPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
+  },
+
 
   
   
