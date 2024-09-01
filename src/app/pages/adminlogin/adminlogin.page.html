@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >OcultoStudio</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+
+      <h3 class="ion-text-center">Inicio de sesion</h3>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingrese su nombre"
+        [(ngModel)]="userLogin" ></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"
+        [(ngModel)]="passwordLogin" ></ion-input>
+      </ion-item>
+      <br>
+      <div class="boton">
+        <ion-button expand="block" color="tertiary" (click)="ingresar()">Ingresar</ion-button>
+        <br>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

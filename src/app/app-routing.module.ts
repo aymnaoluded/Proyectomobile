@@ -43,7 +43,47 @@ const routes: Routes = [
   {
     path: 'envio',
     loadChildren: () => import('./pages/envio/envio.module').then( m => m.EnvioPageModule)
+  },  {
+    path: 'adminlogin',
+    loadChildren: () => import('./pages/adminlogin/adminlogin.module').then( m => m.AdminloginPageModule)
   },
+  {
+    path: 'adminproductos',
+    loadChildren: () => import('./pages/adminproductos/adminproductos.module').then( m => m.AdminproductosPageModule)
+  },
+  {
+    path: 'agregarproductos',
+    loadChildren: () => import('./pages/agregarproductos/agregarproductos.module').then( m => m.AgregarproductosPageModule)
+  },
+  {
+    path: 'adminusuarios',
+    loadChildren: () => import('./pages/adminusuarios/adminusuarios.module').then( m => m.AdminusuariosPageModule)
+  },
+  {
+    path: 'adminprincipal',
+    loadChildren: () => import('./pages/adminprincipal/adminprincipal.module').then( m => m.AdminprincipalPageModule)
+  },
+  {
+    path: 'adminpedidos',
+    loadChildren: () => import('./pages/adminpedidos/adminpedidos.module').then( m => m.AdminpedidosPageModule)
+  },
+  {
+    path: 'detallepedido',
+    loadChildren: () => import('./pages/detallepedido/detallepedido.module').then( m => m.DetallepedidoPageModule)
+  },
+  {
+    path: 'infousuario',
+    loadChildren: () => import('./pages/infousuario/infousuario.module').then( m => m.InfousuarioPageModule)
+  },
+  {
+    path: 'editarproductos',
+    loadChildren: () => import('./pages/editarproductos/editarproductos.module').then( m => m.EditarproductosPageModule)
+  },
+  {
+    path: 'recuperarpassword',
+    loadChildren: () => import('./pages/recuperarpassword/recuperarpassword.module').then( m => m.RecuperarpasswordPageModule)
+  },
+
   
   
 

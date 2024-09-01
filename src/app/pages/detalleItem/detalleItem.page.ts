@@ -14,6 +14,8 @@ export class DetalleItemPage implements OnInit {
   itemId: string | null = null;
   item: any;
 
+  cantidad : number = 1;
+
   private route = inject(ActivatedRoute);
   private navCtrl = inject(NavController);
   private router = inject(Router);
@@ -49,6 +51,16 @@ export class DetalleItemPage implements OnInit {
 
   navigateToCarrito() {
     this.router.navigate(['/carrito']);
+  }
+
+  sumarCantidad() {
+    this.cantidad += 1;
+  }
+
+  restarCantidad() {
+    if (this.cantidad > 1) {
+      this.cantidad -= 1;
+    }
   }
 
 

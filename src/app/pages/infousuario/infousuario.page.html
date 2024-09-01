@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>InfoUsuario</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>
+
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+  
+        <ion-card-title>Información del Usuario</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+  
+              <ion-item>
+                <ion-label position="stacked">Nombre del Usuario</ion-label>
+                <ion-input [(ngModel)]="usuario.nombre" ></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                <ion-label position="stacked">Correo Electrónico</ion-label>
+                <ion-input [(ngModel)]="usuario.correo" ></ion-input>
+              </ion-item>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Dirección de Envío</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label position="stacked">Comuna</ion-label>
+                <ion-input [(ngModel)]="direccion.comuna" ></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                <ion-label position="stacked">Región</ion-label>
+                <ion-input [(ngModel)]="direccion.region" ></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                <ion-label position="stacked">Nombre del Cliente</ion-label>
+                <ion-input [(ngModel)]="direccion.nombreCliente" ></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                <ion-label position="stacked">Dirección de su Domicilio</ion-label>
+                <ion-input [(ngModel)]="direccion.direccion"></ion-input>
+              </ion-item>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-content>
+
+</ion-content>

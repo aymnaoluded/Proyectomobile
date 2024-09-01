@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>EditarProductos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card  >
+    <img alt="Silhouette of mountains" src="{{item.cover}}" />
+    <ion-card-header class="ion-text-center">
+      <ion-item>
+        <ion-label position="stacked">Producto</ion-label>
+        <ion-input [(ngModel)]="item.name" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Descripcion</ion-label>
+        <ion-input [(ngModel)]="item.description" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Precio</ion-label>
+        <ion-input [(ngModel)]="item.price" type="number" ></ion-input>
+      </ion-item>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <div class="boton">
+        <ion-button color="tertiary" (click)="guardar()">Guardar Cambios</ion-button>
+      </div>
+    </ion-card-content>
+    
+  </ion-card>
+
+</ion-content>

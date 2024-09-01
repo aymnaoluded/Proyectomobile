@@ -53,8 +53,9 @@ export class HomePage {
       name: 'Skepta tshirt',
       price: 80,
       status: true,
+      
   
-      cover: 'assets/image/skepta tshirt.webp',
+      cover: 'assets/image/skeptatshirt.webp',
       description: 'Skepta Edition',
     },
     {
@@ -63,7 +64,7 @@ export class HomePage {
       price: 17,
       status: true,
   
-      cover: 'assets/image/short rosa.webp',
+      cover: 'assets/image/short-rosa.webp',
       description: 'Short rosa',
     },
     {
@@ -72,7 +73,7 @@ export class HomePage {
       price: 90,
       status: true,
   
-      cover: 'assets/image/club america.webp',
+      cover: 'assets/image/club-america.webp',
       description: 'Especial edition',
     },
     {
@@ -81,7 +82,7 @@ export class HomePage {
       price: 80,
       status: true,
       rating: 6.2,
-      cover: 'assets/image/carni special.webp',
+      cover: 'assets/image/carni-special.webp',
       description: 'Especial edition',
     },
     //{
@@ -97,7 +98,7 @@ export class HomePage {
       name: 'Hoodie Mirror Balenciaga',
       price: 80,
       status: true,
-      cover: 'assets/image/Mirror.webp',
+      cover: 'assets/image/Mirror.png',
       description: 'Especial edition',
     },
     {

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title >OcultoUsuarios</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <ion-list *ngFor="let usuario of usuarios">
+    <ion-item>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        {{usuario.nombre}}
+      </ion-label>
+      <ion-button slot="end" color="tertiary" [routerLink]="'/infousuario'">Informacion</ion-button>
+
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+</ion-content>

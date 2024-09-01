@@ -13,7 +13,32 @@ export class CuentaPage implements OnInit {
     correo: 'Rau.miranda@duocuc.cl'
   }
 
+  direccion = {
+    comuna: 'Providencia',
+    region: 'Region Metropolitana',
+    nombreCliente: 'Raul Miranda',
+    direccion: 'las aguilas 0365'
+  };
+
+  pedidos = {
+    numeroPedido: '#1',
+    producto: 'Carni Special',
+    precio: '80',
+    estado: 'Finalizado',
+    cliente: 'Raul Miranda',
+    cantidad: 1,
+  };
+
   editar: boolean = false;
+
+
+  editarDireccion() {
+    this.editar = !this.editar;
+
+    if (!this.editar) {
+      console.log('Datos Actualizados: ', this.direccion);
+    }
+  }
 
   constructor() { }
 
@@ -26,6 +51,8 @@ export class CuentaPage implements OnInit {
 
     this.editar = !this.editar;
   }
+
+  
 
   
   

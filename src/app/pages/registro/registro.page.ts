@@ -37,8 +37,9 @@ export class RegistroPage implements OnInit {
 
 
     if(this.nombreUsuario == '' ||  this.email == '' ||  this.password == '' || this.confirmarPassword == ''){
+      
       this.rellenarAlert()
-      return
+
     }else if (this.password != this.confirmarPassword){
 
       this.contraAlert()

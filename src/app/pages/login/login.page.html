@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>OcultoStudio</ion-title>
 
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -17,13 +17,13 @@
   <ion-card>
     <ion-card-header>
 
-      <h1 class="ion-text-center">Iniciar Sesion</h1>
+      <h3 class="ion-text-center">Inicio de sesion</h3>
 
     </ion-card-header>
 
     <ion-card-content>
       <ion-item>
-        <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingrese su nombre"
+        <ion-input label="Nombre de usuario" labelPlacement="floating" placeholder="Ingrese su nombre"
           [(ngModel)]="loginUser"></ion-input>
       </ion-item>
       <br>
@@ -31,14 +31,16 @@
         <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"
           [(ngModel)]="passwordUser"></ion-input>
       </ion-item>
+
+      <ion-item>
+        <a href="" class="ion-text-center" [routerLink]="['/recuperarpassword']">¿Has olvidado tu contraseña?</a> 
+      </ion-item>
+
       <br>
       <div class="boton">
         <ion-button expand="block" color="tertiary" (click)="iniciar()">Iniciar sesion</ion-button>
-        <br>
-        <ion-button expand="block" color="tertiary" [routerLink]="['/registro']">Registrarse</ion-button>
-
-        <a href="" class="ion-text-center" [routerLink]="['/password-olvidada']">¿Has olvidado tu contraseña?</a>
-        <a href="" class="ion-text-center" [routerLink]="['/admin']">Ingresar como administrador</a>
+        <a href="" class="ion-text-center" [routerLink]="['/registro']">Crear cuenta</a>
+        <a href="" class="ion-text-center" [routerLink]="['/adminlogin']">Ingresar como administrador</a>
       </div>
 
     </ion-card-content>

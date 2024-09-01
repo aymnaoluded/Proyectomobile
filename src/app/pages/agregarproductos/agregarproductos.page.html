@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>agregarproducto</ion-title> -->
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-title class="ion-text-center">
+      Ingrese datos del prodcuto
+    </ion-card-title>
+    <hr>
+    <br>
+    <ion-card-content>
+
+      <ion-item>
+        <ion-input label="Nombre" labelPlacement="floating" placeholder=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Precio" labelPlacement="floating" placeholder="" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Descripcion" labelPlacement="floating" placeholder=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <label >Foto</label>
+        <ion-icon name="images-outline" slot="end"></ion-icon>
+      </ion-item>
+
+      <br>
+      <div class="boton">
+          <ion-button expand="block" color="tertiary" (click)="guardar()"> Guardar</ion-button>
+      </div>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+  
+
+</ion-content>

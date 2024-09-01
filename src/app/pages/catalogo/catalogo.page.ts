@@ -22,7 +22,7 @@ export class CatalogoPage implements OnInit {
         name: 'Hoodie Mirror Balenciaga',
         price: 80,
         status: true,
-        cover: 'assets/image/Mirror.webp',
+        cover: 'assets/image/Mirror.png',
         description: 'Especial edition',
       },
       //{
@@ -40,14 +40,14 @@ export class CatalogoPage implements OnInit {
         id: '7',
         name: 'Tshirt',
         
-        cover:'assets/image/club america.webp',
+        cover:'assets/image/club-america.webp',
         description: 'Hoodie special'
       },
       {
         id: '8',
         name: 'Tshirt',
         
-        cover:'assets/image/carni special.webp',
+        cover:'assets/image/carni-special.webp',
         description: 'Especial edition'
       },
       {
@@ -61,7 +61,7 @@ export class CatalogoPage implements OnInit {
         id: '4',
         name: 'Tshirt',
         
-        cover:'assets/image/skepta tshirt.webp',
+        cover:'assets/image/skeptatshirt.webp',
         description: 'Skepta Edition'
       },
       //{
@@ -93,7 +93,7 @@ export class CatalogoPage implements OnInit {
         id: '6',
         name: 'Short rosa',
         
-        cover:'assets/image/short rosa.webp',
+        cover:'assets/image/short-rosa.webp',
         description: 'Short Rosa Alcatraz'
       },
 
