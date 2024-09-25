@@ -38,13 +38,20 @@ export class RegistroPage implements OnInit {
 
     if(this.nombreUsuario == '' ||  this.email == '' ||  this.password == '' || this.confirmarPassword == ''){
       
-      this.rellenarAlert()
+      this.rellenarAlert();
+      return;
 
     }else if (this.password != this.confirmarPassword){
 
       this.contraAlert()
+      return;
 
-    }else{
+    }else if (!/[A-Z]/.test(this.password)) {  
+      this.mayusculaAlert();
+      return;
+    }
+    
+    {
 
       this.registroToast('bottom')
       this.router.navigate(['/login'],navigationextras)
@@ -52,6 +59,16 @@ export class RegistroPage implements OnInit {
     }
 
   }
+   async mayusculaAlert() {
+    const alert = await this.alertController.create({
+      header: "Contrasena invalida",
+      message: "La contrasena debe de tener una letra en mayuscula",
+      buttons: ['OK'],
+    });
+
+    await alert.present();
+  }
+  
 
   async rellenarAlert() {
     const alert = await this.alertController.create({
